@@ -1,0 +1,23 @@
+<div>
+    <div>My Orders</div>
+    <p-table [columns]="viewColumns" [value]="orderData">
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+                <div *ngFor="let col of columns">
+                <th>{{col.field}}</th>
+                </div>
+            </tr>
+
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData>
+            <tr>
+                <td>{{rowData.orderId}}</td>
+                <td>{{rowData.name}}</td>
+                <td>{{rowData.quantity}}</td>
+            </tr>
+
+        </ng-template>
+
+    </p-table>
+
+</div>

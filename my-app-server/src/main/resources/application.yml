@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: my-app-server
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://e2e-myapp.database.windows.net:1433;database=MyApp;user=e2e_admin@e2e-myapp;password=my_password@1;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  # sql:
+  #   init:
+  #     mode: always
+  # jpa:
+  #   show-sql: true
+  #   hibernate:
+  #     dialect: org.hibernate.dialect.SQLServer2012Dialect
+  #     ddl-auto: create-drop
